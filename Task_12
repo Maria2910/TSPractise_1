@@ -13,4 +13,6 @@ declare module 'stats' {
     function getMedianElement<T>(input: T[], comparator: (a: T, b: T) => number): T | null;
 
     function getAverageValue<T>(input: T[], getValue: (item: T) => number): number | null;
+
+    export{getMaxIndex, getMaxElement, getMinIndex, getMinElement, getMedianIndex, getMedianElement, getAverageValue};
 }
