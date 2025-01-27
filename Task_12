@@ -1,0 +1,16 @@
+declare module 'stats' {
+    
+    function getMaxIndex<T>(input: T[], comparator: (a: T, b: T) => number): number;
+
+    function getMaxElement<T>(input: T[], comparator: (a: T, b: T) => number): T | null;
+
+    function getMinIndex<T>(input: T[], comparator: (a: T, b: T) => number): number;
+
+    function getMinElement<T>(input: T[], comparator: (a: T, b: T) => number): T | null;
+
+    function getMedianIndex<T>(input: T[], comparator: (a: T, b: T) => number): number;
+
+    function getMedianElement<T>(input: T[], comparator: (a: T, b: T) => number): T | null;
+
+    function getAverageValue<T>(input: T[], getValue: (item: T) => number): number | null;
+}
