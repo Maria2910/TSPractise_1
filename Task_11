@@ -9,4 +9,6 @@ declare module 'str-utils' {
     function strRandomize(value: string): string;
 
     function strInvertCase(value: string): string;
+
+    export {strReverse, strToLower, strToUpper, strRandomize, strInvertCase};
 }
